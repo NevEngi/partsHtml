@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>サービス名 - 管理者画面</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+  <conteiner class="container-fluid">
+    <h1>サービス名管理者画面</h1>
+    <div class="menu text-right col-12">
+      <!--
+        <button type="submit" class="btn btn-primary mb-2">ログアウト</button>
+      -->
+      <a class="btn btn-danger " href="./login.html" role="button">ログアウト</a>
+    </div>
+    <div class="menu col-12">
+      <h3>ユーザ一覧</h3>
+      <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">メールアドレス検索</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="メールアドレス検索">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">検索</button>
+      </form>
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th>名前</th>
+          <th>年齢</th>
+          <th>性別</th>
+          <th>職業コード</th>
+          <th>都道府県</th>
+          <th>電話番号</th>
+          <th>メールアドレス</th>
+          <th>詳細</th>
+        </tr>
+        <tr>
+          <th>test</th>
+          <th>30</th>
+          <th>60</th>
+          <th>XX</th>
+          <th>XX</th>
+          <th>NNNNNNNNNN</th>
+          <th>test@test.co.jp</th>
+          <th><a class="btn btn-primary" href="./users.html" role="button">詳細</a></th>
+        </tr>
+      </table>
+    </div>
+  </conteiner>
+</body>
+</html>
