@@ -11,7 +11,7 @@
 
   <body">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand" href="./index.html"><img src="image/headerLogo.png" id ="logo"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="ナビゲーションの切替">
           <span class="navbar-toggler-icon"></span>
@@ -19,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">AboutMe</a>
+              <a class="nav-link" href="#aboutMe">AboutMe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -36,25 +36,30 @@
       </nav>
     </header>
 
+    <a id="home"/>
     <section class="Home">
       <div class="jumbotron jumbotron-fluid py-0">
         <img src="image/PortfolioBackGroundImag.jpg"class="card-img-top">
       </div>
     </section>
 
+    <a id="aboutMe"/>
     <section class="aboutMe py-5 px-3">
       <div class="container">
         <h3 class="row font-italic font-weight-bold">About Me</h3>
-        　プログラミング初めて１年、設計歴２年目、業界歴３年目のエンジニアです。</br>
+        <p id="main-text">
+        　はじめまして、高橋です。プログラミング初めて１年、設計歴２年目、業界歴３年目のエンジニアです。</br>
         もとは幼稚園教諭でしたがAIがやりたくてIT業界に転身、SESで物理インフラ・官公庁のシステム開発経験後立ち上げベンチャーにてSaaSをメインとした受託開発を行ってきました。</br>
         　退職後の現在は今まで仕事が忙しくプライベートな時間が取れなかったため手が回っていなかったインフラ周りの技術の勉強しており、
         個人サーバでLinuxやサーバの設定をするほか、プライベートな時間がなかなか取れず作れなかった保育業務管理システムの開発をしています。</br>
         　今後は今まで通り先進的な技術をキャッチアップをしながら、これまでの経験を活かし初めて製造したシステムを見るお客様にも「いいシステム」だとわかってもらえるようなお客様とシステムの橋渡しをするようなポジションからシステムの製造にかかわっていきたいと思っています。</br></br>
+        </p>
         <h5 class="row font-italic font-weight-bold">★Skill★</h5>
         Php/Java/SQL/Linux(LPIC1取得に向けて勉強中)
       </div>
     </section>
 
+    <a id="portfolio"/>
     <section class="portfolio py-5 px-2">
       <div class="container">
         <h3 class="row font-italic font-weight-bold pb-2">Portfolio</h3>
@@ -63,8 +68,7 @@
           <div class="card">
             <img src="image/PortfolioBackGroundImag.jpg"class="card-img-top"><hr>
             <div class="card-body">
-              <h5 class="card-title">保育システム開発</h5>
-              <p class="card-text">Comming Soon</p>
+              <p class="card-text">技術メモ<br>Comming Soon</p>
               <!--
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               -->
@@ -76,8 +80,19 @@
           <div class="card">
             <img src="image/PortfolioBackGroundImag.jpg"class="card-img-top"><hr>
             <div class="card-body">
-              <h5 class="card-title">色覚多様性を包括したUI設計</h5>
-              <p class="card-text">Comming Soon</p>
+              <p class="card-text">保育システム開発<br>Comming Soon</p>
+              <!--
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              -->
+            </div>
+          </div>
+          <!-- Card parts end-->
+
+          <!-- Card parts start-->
+          <div class="card">
+            <img src="image/PortfolioBackGroundImag.jpg"class="card-img-top"><hr>
+            <div class="card-body">
+              <p class="card-text">色覚多様性を包括したUI設計<br>Comming Soon</p>
               <!--
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               -->
@@ -89,6 +104,7 @@
       </div>
     </section>
 
+    <a id="contact"/>
     <section class="contact text-color py-5 px-2">
       <div class="container font-italic font-weight-bold text-light mb-5">
         <h3 class="row ">Contact</br></h3>
@@ -96,19 +112,19 @@
           <form class="col-12">
             <div class="form-group row">
               <label for="staticName" class="col-sm-2 col-form-label">Name</label>
-              <div class="col-sm-11">
+              <div class="col-sm-12">
                 <input type="text" class="form-control mb-2" placeholder="Your Name" name="staticName" id="staticName" required="">
               </div>
             </div>
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-11">
+              <div class="col-sm-12">
                 <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" id="staticEmail" required="">
               </div>
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Message</label>
-              <textarea class="form-control col-sm-11" id="exampleFormControlTextarea1" placeholder="Type your message here!" rows="3"></textarea>
+              <textarea class="form-control col-sm-12" id="exampleFormControlTextarea1" placeholder="Type your message here!" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-outline-light">Submit</button>
           </form>
@@ -117,7 +133,11 @@
     </section>
 
     <footer class="text-light pb-3">
-      <div class="st-Footer_copyright text-center">© 2020- kurigohaa</div>
+      <div class="text-center">
+        <a href="https://github.com/TakahashiAi9999"><img src="image/GitHub_Logo.png"style ="width: 3rem"></a>
+        <a href="https://twitter.com/kurigohaa"><img src="image/twitter.png" style ="width: 1.5rem"></a>
+      </div>
+      <div class="st-Footer_copyright text-center">© 2020- @kurigohaa</div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
